@@ -311,6 +311,26 @@
       object-position: 46% 50%;
     }
 
+    .project-media.is-gesture img {
+      object-position: 50% 58%;
+    }
+
+    .project-media.is-safewalk img {
+      object-position: 50% 56%;
+    }
+
+    .project-media.is-diver img {
+      object-position: 50% 54%;
+    }
+
+    .project-media.is-operator img {
+      object-position: 50% 45%;
+    }
+
+    .project-media.is-revolution img {
+      object-position: 50% 48%;
+    }
+
     .project-body h4 {
       margin: 0 0 12px;
       font-size: 1rem;
@@ -323,6 +343,25 @@
 
     .project-body li {
       margin: 0 0 8px;
+    }
+
+    .project-description {
+      margin: 0;
+    }
+
+    .project-skills,
+    .project-award {
+      margin: 10px 0 0;
+      font-size: 0.94rem;
+    }
+
+    .project-skills {
+      color: var(--muted);
+    }
+
+    .project-award {
+      color: #3d5554;
+      font-weight: 700;
     }
 
     .publication {
@@ -530,10 +569,13 @@
                 <img src="assets/honors-thesis-robot.jpg" alt="Participant writing while a social robot sits across the table">
               </div>
               <div class="project-body">
-                <h4>[Honors Thesis] User Perceptions of Agency in LLM-Controlled Social Robots</h4>
+                <h4>[Bachelor's Thesis] User Perceptions of Agency in LLM-Controlled Social Robots</h4>
                 <ul>
                   <li>Conducting a between-subjects study on user perceptions of LLM-controlled social robots; preliminary results suggest that users perceive LLM-controlled robots more similarly to autonomous robots than to teleoperated robots</li>
                 </ul>
+                <div class="resource-links">
+                  <span class="resource-item">Video Coming Soon!</span>
+                </div>
               </div>
             </article>
 
@@ -549,7 +591,7 @@
                   <li>Conducted a between-subjects study (N=100) with 6–10-year-old children, showing that a robot’s asking for help builds trust between a robot and a child, and that expressing emotional vulnerability creates further feelings of connection</li>
                 </ul>
                 <p class="publication">T. Flanagan, <strong>J. C. Zhang</strong>, L. Bian, &amp; S. Sebo</p>
-                <p class="venue">ACM/IEEE International Conference on Human Robot Interaction (HRI 2026)</p>
+                <p class="venue">ACM/IEEE International Conference on Human-Robot Interaction (HRI 2026)</p>
                 <div class="resource-links">
                   <a href="https://hri.cs.uchicago.edu/publications/HRI_2026_Flanagan_Can_You_Help_Me.pdf">Paper</a>
                   <a href="https://www.youtube.com/watch?v=eNbhSPG463A&amp;feature=youtu.be">Video</a>
@@ -569,7 +611,7 @@
                   <li>Conducted a between-subjects study (N=66), showing that both high extraversion and high neuroticism personalities significantly enhanced participants’ emotional states, with high extraversion rated most enjoyable</li>
                 </ul>
                 <p class="publication">W. Zhang, C. Kovacs, L. Pablo, <strong>J. Zhang</strong>, M. Bai, S. Jeong, &amp; S. Sebo</p>
-                <p class="venue">ACM/IEEE International Conference on Human Robot Interaction (HRI 2025)</p>
+                <p class="venue">ACM/IEEE International Conference on Human-Robot Interaction (HRI 2025)</p>
                 <div class="resource-links">
                   <a href="https://hri.cs.uchicago.edu/publications/HRI_2025_Zhang_Exploring_Robot_Personality_Traits_and_Their_Influence_on_User_Affect_and_Experience.pdf">Paper</a>
                   <a href="https://www.youtube.com/watch?v=dgE4S6Hqpqk&amp;feature=youtu.be">Video</a>
@@ -612,9 +654,82 @@
         <div class="section-heading">
           <h2 id="projects-heading">Projects</h2>
         </div>
-        <p class="projects-note">
-          This section is reserved for future project descriptions, media, links, and implementation details.
-        </p>
+
+        <div class="project-list">
+          <article class="project-card has-project-image">
+            <div class="project-media has-image is-wide is-gesture">
+              <img src="assets/gesture-controlled-robot.jpg" alt="TurtleBot 4 responding to a hand gesture during a demonstration">
+            </div>
+            <div class="project-body">
+              <h4>[Course Project] Gesture-Controlled Home Companion Robot</h4>
+              <p class="project-description">We trained a computer vision model to detect user hand gestures and implemented an inverse kinematics algorithm on a TurtleBot 4, enabling the robot to recognize gestures and perform corresponding tasks. Depending on the detected gesture, the robot can search for and retrieve a target item for the user, dance with the user, or move to a corner to rest and wait for the next command.</p>
+              <p class="project-skills"><strong>Skills:</strong> Python, ROS 2, PyTorch</p>
+              <div class="resource-links">
+                <a href="https://youtu.be/-9b96tJmEak">Video</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card has-project-image">
+            <div class="project-media has-image is-wide is-safewalk">
+              <img src="assets/safewalk-wearable.jpg" alt="SafeWalk wearable belt and wrist-mounted electronics prototype">
+            </div>
+            <div class="project-body">
+              <h4>[Course Project] SafeWalk: A Wearable Safety Assistant for Blind Users</h4>
+              <p class="project-description">We built a wearable belt designed to support safer navigation for blind users. The system uses ultrasonic sensors, buzzers, and motors to detect nearby obstacles and guide users toward safer paths. It also uses an accelerometer and Bluetooth communication to send alerts to a friend or caregiver when a fall is detected or when the user manually sends an emergency alert.</p>
+              <p class="project-skills"><strong>Skills:</strong> C++, Arduino, Circuit Design, Soldering</p>
+              <div class="resource-links">
+                <a href="https://youtu.be/e1KDQoD8NoY">Video</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card has-project-image">
+            <div class="project-media has-image is-wide is-diver">
+              <img src="assets/vr-diver-interface.jpg" alt="VR diver interface with gesture controls and safety information">
+            </div>
+            <div class="project-body">
+              <h4>[Course Project] VR Diver Interface</h4>
+              <p class="project-description">We developed a VR diver interface in Unity3D that supports one-handed gesture controls, accessible visual and audio feedback, and confirmation steps for safety-critical actions.</p>
+              <p class="project-skills"><strong>Skills:</strong> C#, Unity, VR, UI/UX Design</p>
+              <div class="resource-links">
+                <a href="https://www.youtube.com/watch?v=XROSKlgWb04">Video</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card has-project-image">
+            <div class="project-media has-image is-wide is-operator">
+              <img src="assets/guess-the-operator.jpg" alt="GuessTheOperator web game interface">
+            </div>
+            <div class="project-body">
+              <h4>[UChicago Uncommon Hacks] <em>GuessTheOperator</em></h4>
+              <p class="project-description">We developed a puzzle-solving web game within 24 hours where players identify hidden "mathematical" operators by testing number inputs, using clues and hints strategically, and avoiding incorrect guesses that restart the game.</p>
+              <p class="project-skills"><strong>Skills:</strong> JavaScript, HTML, CSS</p>
+              <p class="project-award">&#127942; Champion of Web Development Track, 2024 UChicago Uncommon Hacks</p>
+              <div class="resource-links">
+                <a href="https://adenchen27.github.io/GuessTheOperator/index.html">Game</a>
+                <a href="https://github.com/AdenChen27/GuessTheOperator">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card has-project-image">
+            <div class="project-media has-image is-wide is-revolution">
+              <img src="assets/revolution-game.jpg" alt="Revolution strategy game battle screen">
+            </div>
+            <div class="project-body">
+              <h4>[UChicago Summer Tech Showcase] <em>Revolution</em></h4>
+              <p class="project-description">Developed a roguelike-inspired strategy digital board game in Unity, where players make tactical decisions, adapt to randomized events, and progress through replayable challenges.</p>
+              <p class="project-skills"><strong>Skills:</strong> C#, Unity</p>
+              <p class="project-award">&#127942; 2nd place, 2024 UChicago Summer Tech Showcase</p>
+              <div class="resource-links">
+                <a href="https://drive.google.com/drive/folders/1LKiNfeYkzFNlrxtf5rgROErOBNCP6L3f">Game</a>
+                <a href="https://drive.google.com/drive/folders/1LKiNfeYkzFNlrxtf5rgROErOBNCP6L3f">Video</a>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
   </main>

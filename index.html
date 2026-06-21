@@ -13,6 +13,8 @@
       --text: #202124;
       --muted: #5f6670;
       --line: #d9dde2;
+      --link: #245c8f;
+      --link-hover: #174866;
       --maroon: #7a1f36;
       --teal: #2d6f6d;
       --shadow: 0 16px 38px rgba(28, 32, 36, 0.08);
@@ -38,13 +40,13 @@
     }
 
     a {
-      color: var(--maroon);
+      color: var(--link);
       text-decoration-thickness: 1px;
       text-underline-offset: 3px;
     }
 
     a:hover {
-      color: var(--teal);
+      color: var(--link-hover);
     }
 
     .site-header {
@@ -224,6 +226,15 @@
     .lab-header h3 {
       margin: 0;
       font-size: 1.25rem;
+    }
+
+    .lab-header h3 a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    .lab-header h3 a:hover {
+      color: var(--link-hover);
     }
 
     .dates {
@@ -509,14 +520,14 @@
 
         <div class="lab">
           <div class="lab-header">
-            <h3>Human-Robot Interaction (HRI) Lab</h3>
+            <h3><a href="https://hri.cs.uchicago.edu/">Human-Robot Interaction (HRI) Lab</a></h3>
             <span class="dates">Jun. 2024 &ndash; Present</span>
           </div>
 
           <div class="project-list">
             <article class="project-card has-project-image">
               <div class="project-media has-image is-wide">
-                <img src="assets/honors-thesis-robot.jpg" alt="Social robot facing a laptop during the honors thesis study">
+                <img src="assets/honors-thesis-robot.jpg" alt="Participant writing while a social robot sits across the table">
               </div>
               <div class="project-body">
                 <h4>[Honors Thesis] User Perceptions of Agency in LLM-Controlled Social Robots</h4>
@@ -548,7 +559,7 @@
 
             <article class="project-card has-project-image">
               <div class="project-media has-image is-wide is-personality">
-                <img src="assets/robot-personality-nao.jpg" alt="NAO robot in front of a personality task display">
+                <img src="assets/robot-personality-nao.jpg" alt="Participant interacting with a NAO robot during a personality study">
               </div>
               <div class="project-body">
                 <h4>[HRI 2025] Exploring Robot Personality Traits and Their Influence on User Affect and Experience</h4>
@@ -570,7 +581,7 @@
 
         <div class="lab">
           <div class="lab-header">
-            <h3>Scientists, Technologists, and Artists Generating Exploration (STAGE) Center</h3>
+            <h3><a href="https://stagecenter.uchicago.edu/">Scientists, Technologists, and Artists Generating Exploration (STAGE) Center</a></h3>
             <span class="dates">Nov. 2023 &ndash; Jun. 2025</span>
           </div>
 
@@ -583,8 +594,7 @@
                 <h4>Exploring the Quantum Labyrinth: Teaching Physics Through Games</h4>
                 <ul>
                   <li>Led an interdisciplinary student team developing and evaluating <em>Quantum Labyrinth</em>, a digital game designed to make quantum physics accessible to non-experts</li>
-                  <li>Designed and conducted two user evaluations with UChicago faculty, students, and children to collect feedback on concept clarity, engagement, and learning outcomes, integrating findings into iterative game improvements</li>
-                  <li>Led weekly two-hour sessions for five new team members on GameMaker Language and embodied physics concepts</li>
+                  <li>Conducted two user evaluations with UChicago faculty, students, and children to collect feedback on concept clarity, engagement, and learning outcomes, integrating findings into iterative game improvements</li>
                   <li><em>Quantum Labyrinth</em> was presented at the <em>2025 American Physical Society Joint March Meeting &amp; April Meeting</em>, and we shared our lessons learned at the <em>2025 UChicago Undergraduate Research Symposium</em>.</li>
                 </ul>
                 <div class="resource-links">
